@@ -114,7 +114,7 @@
     });
   });
 
-  var current_todo_id = <%= @todos.last&.id || 0 %>;
+  var current_todo_id = <%= @todos.last.id %>;
 
   $(window).on("scroll", function(event) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
