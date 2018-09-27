@@ -1,0 +1,16 @@
+<td class="my-pointer">
+  <% if todo.done? %>
+    <span class="toggle-todo my-font glyphicon glyphicon-check"></span>
+  <% else %>
+    <span class="toggle-todo my-font glyphicon glyphicon-unchecked"></span>
+  <% end %>
+</td>
+<td class="my-title">
+  <p class="title my-font">
+    <%= todo.title %>
+  </p>
+</td>
+<td class="my-operation">
+  <span class="edit-todo my-btn my-btn-transparent text-info glyphicon glyphicon-pencil"></span>
+  <span class="delete-todo my-btn my-btn-transparent text-danger glyphicon glyphicon-trash"></span>
+</td>
